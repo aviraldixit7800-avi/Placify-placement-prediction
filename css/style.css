@@ -1,29 +1,31 @@
 
+
 :root {
 
-    bg-main: #050816;
-    bg-secondary: #0B1120;
-    bg-card: #111827;
+    --bg-main: #050816;
+    --bg-secondary: #0B1120;
+    --bg-card: #111827;
 
-    primary: #3B82F6;
-    primary-dark: #2563EB;
-    purple: #8B5CF6;
-    cyan: #22D3EE;
+    --primary: #3B82F6;
+    --primary-dark: #2563EB;
+    --purple: #8B5CF6;
+    --cyan: #22D3EE;
 
-    text-main: #F8FAFC;
-    text-secondary: #CBD5E1;
-    text-muted: #94A3B8;
+    --text-main: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
 
-    border: #1E293B;
-    border-light: #334155;
+    --border: #1E293B;
+    --border-light: #334155;
 
-    success: #22C55E;
-    warning: #F59E0B;
-    danger: #EF4444;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
 
-    container: 1180px;
+    --container: 1180px;
 
 }
+
 
 * {
     margin: 0;
@@ -79,6 +81,7 @@ button,
 input {
     font: inherit;
 }
+
 
 .navbar {
 
@@ -274,6 +277,7 @@ input {
     cursor: pointer;
 
 }
+
 
 .section {
 
@@ -1414,8 +1418,6 @@ input {
 
 }
 
-
-
 .steps {
 
     display: grid;
@@ -1476,7 +1478,6 @@ input {
 
 }
 
-
 .analyze-grid {
 
     display: grid;
@@ -1532,7 +1533,6 @@ input {
     font-size: 13px;
 
 }
-
 
 .about {
 
@@ -1620,6 +1620,7 @@ input {
     font-size: 11px;
 
 }
+
 
 .disclaimer {
 
@@ -1730,7 +1731,6 @@ input {
     color: #475569 !important;
 
 }
-
 
 @media (max-width: 1000px) {
 
