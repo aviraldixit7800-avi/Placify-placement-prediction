@@ -1,39 +1,29 @@
-/* =========================================================
-   PLACIFY
-   COLLEGE PLACEMENT PREDICTION SYSTEM
-   ========================================================= */
-
-
-/* ================= ROOT ================= */
 
 :root {
 
-    --bg-main: #050816;
-    --bg-secondary: #0B1120;
-    --bg-card: #111827;
+    bg-main: #050816;
+    bg-secondary: #0B1120;
+    bg-card: #111827;
 
-    --primary: #3B82F6;
-    --primary-dark: #2563EB;
-    --purple: #8B5CF6;
-    --cyan: #22D3EE;
+    primary: #3B82F6;
+    primary-dark: #2563EB;
+    purple: #8B5CF6;
+    cyan: #22D3EE;
 
-    --text-main: #F8FAFC;
-    --text-secondary: #CBD5E1;
-    --text-muted: #94A3B8;
+    text-main: #F8FAFC;
+    text-secondary: #CBD5E1;
+    text-muted: #94A3B8;
 
-    --border: #1E293B;
-    --border-light: #334155;
+    border: #1E293B;
+    border-light: #334155;
 
-    --success: #22C55E;
-    --warning: #F59E0B;
-    --danger: #EF4444;
+    success: #22C55E;
+    warning: #F59E0B;
+    danger: #EF4444;
 
-    --container: 1180px;
+    container: 1180px;
 
 }
-
-
-/* ================= RESET ================= */
 
 * {
     margin: 0;
@@ -89,9 +79,6 @@ button,
 input {
     font: inherit;
 }
-
-
-/* ================= NAVBAR ================= */
 
 .navbar {
 
@@ -288,9 +275,6 @@ input {
 
 }
 
-
-/* ================= COMMON ================= */
-
 .section {
 
     width: min(
@@ -363,9 +347,6 @@ input {
     font-size: 16px;
 
 }
-
-
-/* ================= HERO ================= */
 
 .hero {
 
@@ -595,9 +576,6 @@ input {
     margin-right: 5px;
 
 }
-
-
-/* ================= HERO VISUAL ================= */
 
 .hero-visual {
 
@@ -892,9 +870,6 @@ input {
 
 }
 
-
-/* ================= QUICK STATS ================= */
-
 .quick-stats {
 
     width: min(
@@ -961,9 +936,6 @@ input {
     font-size: 12px;
 
 }
-
-
-/* ================= FORM ================= */
 
 .prediction-form {
 
@@ -1171,9 +1143,6 @@ input {
 
 }
 
-
-/* ================= RESULT ================= */
-
 .result-section {
 
     transition:
@@ -1362,9 +1331,6 @@ input {
 
 }
 
-
-/* ================= SUGGESTIONS ================= */
-
 .suggestion-grid {
 
     display: grid;
@@ -1449,7 +1415,6 @@ input {
 }
 
 
-/* ================= STEPS ================= */
 
 .steps {
 
@@ -1512,8 +1477,6 @@ input {
 }
 
 
-/* ================= ANALYZE ================= */
-
 .analyze-grid {
 
     display: grid;
@@ -1570,8 +1533,6 @@ input {
 
 }
 
-
-/* ================= ABOUT ================= */
 
 .about {
 
@@ -1660,9 +1621,6 @@ input {
 
 }
 
-
-/* ================= DISCLAIMER ================= */
-
 .disclaimer {
 
     width: min(
@@ -1695,9 +1653,6 @@ input {
     color: var(--warning);
 
 }
-
-
-/* ================= FOOTER ================= */
 
 .footer {
 
@@ -1776,8 +1731,6 @@ input {
 
 }
 
-
-/* responsive */
 
 @media (max-width: 1000px) {
 
