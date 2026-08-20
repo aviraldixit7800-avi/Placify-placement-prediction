@@ -19,39 +19,19 @@ form.addEventListener("submit", function (event) {
     const aptitude = parseFloat(document.getElementById("aptitude").value) || 0;
     const communication = parseFloat(document.getElementById("communication").value) || 0;
 
-
-    // -----------------------------
-    // ACADEMIC SCORE
-    // -----------------------------
-
     const cgpaScore = (cgpa / 10) * 100;
 
     const academicScore =
         (cgpaScore * 0.50) +
         (tenth * 0.25) +
         (twelfth * 0.25);
-
-
-    // -----------------------------
-    // TECHNICAL SCORE
-    // -----------------------------
-
+    
     const technicalScore =
         (coding * 0.55) +
         (aptitude * 0.45);
 
-
-    // -----------------------------
-    // PROJECT SCORE
-    // -----------------------------
-
     const projectScore =
         Math.min(projects * 20, 100);
-
-
-    // -----------------------------
-    // EXPERIENCE SCORE
-    // -----------------------------
 
     const internshipScore =
         Math.min(internships * 35, 100);
@@ -63,18 +43,8 @@ form.addEventListener("submit", function (event) {
         (internshipScore * 0.65) +
         (certificationScore * 0.35);
 
-
-    // -----------------------------
-    // BACKLOG PENALTY
-    // -----------------------------
-
     const backlogPenalty =
         Math.min(backlogs * 4, 25);
-
-
-    // -----------------------------
-    // FINAL PREDICTION
-    // -----------------------------
 
     let finalScore =
         (academicScore * 0.35) +
@@ -92,11 +62,6 @@ form.addEventListener("submit", function (event) {
 
     finalScore = Math.round(finalScore);
 
-
-    // -----------------------------
-    // STATUS
-    // -----------------------------
-
     let status;
 
     if (finalScore >= 75) {
@@ -113,21 +78,11 @@ form.addEventListener("submit", function (event) {
 
     }
 
-
-    // -----------------------------
-    // UPDATE RESULT
-    // -----------------------------
-
     document.getElementById("resultPercentage")
         .textContent = finalScore;
 
     document.getElementById("resultStatus")
         .textContent = status;
-
-
-    // -----------------------------
-    // BREAKDOWN
-    // -----------------------------
 
     const academic = Math.round(
         Math.max(0, Math.min(100, academicScore))
@@ -156,11 +111,6 @@ form.addEventListener("submit", function (event) {
     document.getElementById("experienceResult")
         .textContent = experience + "%";
 
-
-    // -----------------------------
-    // PROGRESS BARS
-    // -----------------------------
-
     document.getElementById("academicBar")
         .style.width = academic + "%";
 
@@ -172,11 +122,6 @@ form.addEventListener("submit", function (event) {
 
     document.getElementById("experienceBar")
         .style.width = experience + "%";
-
-
-    // -----------------------------
-    // SHOW RESULT
-    // -----------------------------
 
     resultSection.classList.remove("hidden");
 
